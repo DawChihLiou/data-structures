@@ -6,7 +6,10 @@ export default function LinkedList() {
 }
 
 /**
- * Add value to the end of the list 
+ * Add value to the end of the list
+ * 
+ * @param {*} value
+ * @return {Node} node 
  */
 LinkedList.prototype.add = function(value) {
   let node = new Node(value); 
@@ -32,6 +35,9 @@ LinkedList.prototype.add = function(value) {
 
 /**
  * Find node at given position
+ * 
+ * @param {number} index
+ * @return {Node} current 
  */
 LinkedList.prototype.get = function(index) {
   let current = this.head;
@@ -50,6 +56,9 @@ LinkedList.prototype.get = function(index) {
 
 /**
  * Remove value from the list
+ *
+ * @param {number} index
+ * @return {Node} head 
  */
 LinkedList.prototype.remove = function(index) {
   let current = this.head;
